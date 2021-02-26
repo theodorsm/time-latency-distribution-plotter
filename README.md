@@ -35,3 +35,5 @@ Plot will be saved as `./plots/PLOT_<TIMESTAMP>.png` and log file with data is f
 
 - [ ] Add CPU & RAM usage
 - [ ] Add jitter measurement
+- [ ] Add standard deviation
+- [ ] Use iperf(?)
