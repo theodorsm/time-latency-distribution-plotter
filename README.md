@@ -1,7 +1,7 @@
 # RTT-PLOTTER
 
-A basic script used for plotting RTT from ping.
-Useful for getting a quick insight in the state of a link.
+A basic script used for plotting round-trip-times from ping.
+Useful for getting a quick insight into the state of a link.
 
 ## Requirements
 
