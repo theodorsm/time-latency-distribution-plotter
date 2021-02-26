@@ -5,7 +5,7 @@ Useful for getting a quick insight in the state of a link.
 
 ## Requirements
 
-- python3
+- python >=3.3 (venv)
 - pip
 
 ## Running

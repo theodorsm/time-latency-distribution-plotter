@@ -25,8 +25,11 @@ then
    helpFunction
 fi
 
+[ -d rtt_log] || echo "Directory rtt_log not found, creating..." && mkdir rtt_log
+[ -d plots] || echo "Directory plots not found, creating..." && mkdir plots
+
 echo "Sending $count packets..."
 filename="./rtt_log/$(date +"%Y_%m_%d_%I_%M_%p").log"
 ping -c $count $destination | sed -rn 's|.*=([0-9]+\.?[0-9]+?) ms|\1|p' > $filename
-echo "Generating plot"
+echo "Generating plot..."
 ./make_plot.py $filename
