@@ -40,5 +40,5 @@ plt.xticks(points)
 
 plt.xlabel("Packet count")
 plt.ylabel("RTT in ms")
-filename = "PLOT_" + os.path.basename(path)[:-4]
+filename = "plots/PLOT_" + os.path.basename(path)[:-4]
 plt.savefig(filename + ".png")
