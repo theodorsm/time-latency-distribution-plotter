@@ -34,3 +34,4 @@ Plot will be saved as `./plots/PLOT_<TIMESTAMP>.png` and log file with data is f
 ## TODO
 
 - [ ] Add CPU & RAM usage
+- [ ] Add jitter measurement
