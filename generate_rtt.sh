@@ -25,8 +25,13 @@ then
    helpFunction
 fi
 
-[ -d rtt_log] || echo "Directory rtt_log not found, creating..." && mkdir rtt_log
-[ -d plots] || echo "Directory plots not found, creating..." && mkdir plots
+for dir in "rtt_log" "plots"
+do
+    if [[ ! -e $dir ]]; then
+        mkdir $dir
+        echo "Directory $dir not found, creating.." || mkdir $dir
+    fi
+done
 
 echo "Sending $count packets..."
 filename="./rtt_log/$(date +"%Y_%m_%d_%I_%M_%p").log"
