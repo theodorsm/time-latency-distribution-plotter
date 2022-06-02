@@ -3,4 +3,5 @@ venv
 *.data
 *.png
 *.svg
-!example_plot.png
+!example_plot_wide.png
+!example_plot_tiled.png

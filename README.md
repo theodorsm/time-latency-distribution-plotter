@@ -28,7 +28,11 @@ source venv/bin/activate
 
 Plot will be saved as `./plots/PLOT_<NEW_FILENAME>.png`.
 
-![Example plot, DPDK testpmd performance](./example_plot.png)
+![Example plot, DPDK testpmd performance](./example_plot_wide.png)
+
+convert.sh will split and tile the plots:
+
+![Example tiled plot, DPDK testpmd performance](./example_plot_tiled.png)
 
 ### Data format
 
