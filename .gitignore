@@ -1,1 +1,6 @@
 venv
+*.txt
+*.data
+*.png
+*.svg
+!example_plot.png

@@ -1,7 +1,6 @@
-# RTT-PLOTTER
+# Time-latency-distribution
 
-A basic script used for plotting round-trip-times from ping.
-Useful for getting a quick insight into the state of a link.
+A basic script used for plotting time-latency distribution from binary data created by my TRex fork: https://github.com/theodorsm/trex-core .
 
 ## Requirements
 
@@ -24,16 +23,20 @@ source venv/bin/activate
 ### Example
 
 ```bash
-./generate_rtt.sh -c 10 -d 10.0.0.1
+./make_plot.py data/<SOME_TREX_DATA>.data <NEW_FILENAME>
 ```
 
-Plot will be saved as `./plots/PLOT_<TIMESTAMP>.png` and log file with data is found under `./rt_log/<TIMESTAMP>.log`
+Plot will be saved as `./plots/PLOT_<NEW_FILENAME>.png`.
 
-![Example plot](./example_out.png)
+![Example plot, DPDK testpmd performance](./example_plot.png)
 
-## TODO
+### Data format
 
-- [ ] Add CPU & RAM usage
-- [ ] Add jitter measurement
-- [ ] Add standard deviation
-- [ ] Use iperf(?)
+A binary file of float cpp-types.
+
+This is how it is written to file:
+
+```cpp
+myfile.write( reinterpret_cast<const char*>( &time ), sizeof ( float )); // elapsed time since start
+myfile.write( reinterpret_cast<const char*>( &lat ), sizeof ( float )); // latency
+```
