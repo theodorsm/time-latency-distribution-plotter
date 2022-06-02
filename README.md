@@ -30,7 +30,7 @@ Plot will be saved as `./plots/PLOT_<NEW_FILENAME>.png`.
 
 ![Example plot, DPDK testpmd performance](./example_plot_wide.png)
 
-convert.sh will split and tile the plots:
+`convert.sh` will split and tile the plots:
 
 ![Example tiled plot, DPDK testpmd performance](./example_plot_tiled.png)
 
@@ -38,7 +38,7 @@ convert.sh will split and tile the plots:
 
 A binary file of float cpp-types.
 
-This is how it is written to file:
+This is how it is written to file in CPP:
 
 ```cpp
 myfile.write( reinterpret_cast<const char*>( &time ), sizeof ( float )); // elapsed time since start
