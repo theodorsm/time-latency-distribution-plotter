@@ -34,6 +34,8 @@ Plot will be saved as `./plots/PLOT_<NEW_FILENAME>.png`.
 
 ![Example tiled plot, DPDK testpmd performance](./example_plot_tiled.png)
 
+The `results` folder contains some plots from benchmarking different devices under different traffic loads.
+
 ### Data format
 
 A binary file of float cpp-types.
