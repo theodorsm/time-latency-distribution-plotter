@@ -1,6 +1,6 @@
 # Time-latency-distribution
 
-A basic script used for plotting time-latency distribution from binary data created by my TRex fork: https://github.com/theodorsm/trex-core .
+A basic script used for plotting time-latency distribution from binary data captured by my TRex fork: https://github.com/theodorsm/trex-core
 
 ## Requirements
 
